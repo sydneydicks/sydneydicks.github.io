@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Syd''s Money Diary!!!!!!!
+title: Syd's Money Diary!!!!!!!
 email: sydneysidganz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal money diary to both romanticize how I spend my time and
