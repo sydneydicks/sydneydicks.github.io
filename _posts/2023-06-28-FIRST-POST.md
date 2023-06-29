@@ -3,6 +3,7 @@ layout: post
 title: "FIRST POST"
 date: 2023-06-28 10:15:00 -0000
 categories: CATEGORY-1 CATEGORY-2
+comments: true
 ---
 This is my first post. I'll detail my day in little chunks and we'll see if when I read this back, if I feel like I spend my time "well".
 
@@ -42,3 +43,25 @@ and start to work on this blog. So far, I've been able to figure out maybe 1 err
 this post is a huge win. This is progress! My totals for the day will be extremely light, but that's where the money isssss
 
 Total for the day: **$95.66** 
+
+{% if page.comments %} 
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-sydneydicks-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
